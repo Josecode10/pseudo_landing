@@ -11,14 +11,14 @@ body {
 }
 
 header {
-    width: 70%;
+    width: 90%;
     height: 50px;
     margin: 20px auto;
-    background-color: #fff;
     text-align: center;
     line-height: 50px;
     font-weight: bold;
     font-style: none;
+    font-size: 19px;
 }
 
 header nav ul li {
@@ -42,6 +42,8 @@ header nav ul li {
     vertical-align: top;
     margin: 0px auto;
     text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .promo {
@@ -74,8 +76,7 @@ form {
 }
 
 .formtitle {
-    margin-top: 150px;
-
+    margin: 15px 0px 15px 0px;
 }
 
 
