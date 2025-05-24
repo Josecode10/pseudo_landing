@@ -2,19 +2,30 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-style: none;
     font-family: sans-serif;
+    text-decoration: none;
 }
 
 :root {
     --color: #2BAA7F;
 }
 
+li a {
+    color: rgba(0, 100, 255, 0.5);
+}
+
 body {
     background-color: #ceeee3;
 }
+
 .phone {
     color: var(--color);
+}
+
+.phone::before {
+    font-family: "remixicon";
+    content: "\EFE9";
+    padding-right: 10px;
 }
 
 header {
@@ -51,10 +62,11 @@ header nav ul li {
     text-align: left;
     margin-left: 0px;
     margin-right: 0px;
+    box-shadow: 0px 0px 50px -10px rgba(0, 100, 255, 0.5);
 }
 
 .promo {
-    background: linear-gradient(rgba(0, 0, 255, 0.4), rgba(0, 128, 255, 0.4)),url('img/woman.jpg');
+    background: linear-gradient(rgba(0, 100, 255, 0.5), rgba(0, 100, 255, 0.5)),url('img/woman.jpg');
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
@@ -70,11 +82,24 @@ header nav ul li {
     background-color: var(--color);
     bottom: 20px;
     color: #fff;
-    
+    font-size: 18px;
+}
+
+.btn1 {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--color);
+    background-color: transparent;
+    bottom: 20px;
+    color: var(--color);
+    font-weight: bolder;
+    font-size: 18px;
+
 }
 
 .promo h1 {
-    margin-top: 150px;
+    margin-top: 130px;
     margin-bottom: 0px;
     color: #fff;
     font-size: 2.5rem;
@@ -110,7 +135,7 @@ form {
 .cajaname {
     width: 448px;
     height: 55px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .name {
@@ -138,4 +163,59 @@ input {
     width: 166px;
 }
 
+
+[type="submit"] {
+    display: block;
+    margin: 0px auto;
+}
+
+.btn::after,
+.btn1::after {
+    font-family: "remixicon";
+    content: "\F008";
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.social-media {
+    width: 100px;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 100, 255, 0.5);
+    left: 0;
+    top: 0;
+}
+
+.social-media a {
+    display: block;
+    color: var(--color);
+    text-align: center;
+    font-size: 50px;
+}
+
+[href="#home"]::before {
+    font-family: "remixicon";
+    content: "\F578";
+}
+[href="#twitter"]::before {
+    font-family: "remixicon";
+    content: "\F23A";
+}
+[href="#facebook"]::before {
+    font-family: "remixicon";
+    content: "\ECBC";
+}
+[href="#instagram"]::before {
+    font-family: "remixicon";
+    content: "\EE66";
+}
+[href="#youtube"]::before {
+    font-family: "remixicon";
+    content: "\F2D4";
+}
+
+[href="#home"] {
+    margin-top: 20px;
+    margin-bottom: 450px;
+}
 
