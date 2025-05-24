@@ -54,11 +54,23 @@ header nav ul li {
 }
 
 .promo {
-    background-image: url(img/depositphotos_198063982-stock-photo-beautiful-black-woman-relaxing-smiling.jpg);
+    background: linear-gradient(rgba(0, 0, 255, 0.4), rgba(0, 128, 255, 0.4)),url('img/woman.jpg');
+    background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px;
+}
+
+.btn {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color);
+    bottom: 20px;
+    color: #fff;
+    
 }
 
 .promo h1 {
@@ -112,11 +124,18 @@ input {
     height: 30px;
     background-color: #e1e1e1;
     padding-left: 10px;
+    border: none;
 }
 
 [type="email"],
 [type="tel"] {
     margin-bottom: 15px;
+    width: 395px;
+}
+
+[type="date"],
+[type="time"] {
+    width: 166px;
 }
 
 
